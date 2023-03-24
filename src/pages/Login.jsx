@@ -35,16 +35,16 @@ const Login = ({ setLoading, loading }) => {
   };
 
   return (
-    <div className="flex justify-center items-center h-[100vh]">
+    <div className="flex justify-center items-center h-[100vh] mx-16">
       {/* image */}
       <div className="mb-12 md:mb-0 md:w-7/12 lg:w-6/12">
         <img src="3236267.jpg" className="w-full" alt="Phone image" />
       </div>
 
       {/* Login component */}
-      <div className=" justify-center items-center">
+      <div className=" justify-center flex-1 items-center max-w-[35%]">
         {" "}
-        <div className="flex flex-col shadow-md">
+        <div className="flex flex-col">
           <h1 className="flex justify-center mt-3 text-4xl text-[#014A83] font-bold text-bold">
             User Login
           </h1>
@@ -67,7 +67,7 @@ const Login = ({ setLoading, loading }) => {
               onChange={(e) => setPassword(e.target.value)}
             />
             <button
-              className=" rounded-xl m-5 color-white font-bold text-lg text-white text-md py-2 bg-[#014A83]"
+              className=" rounded-xl mt-3 ml-4 color-white font-bold text-lg text-white text-md py-2 bg-[#014A83]"
               onClick={loginHandler}
             >
               Login
